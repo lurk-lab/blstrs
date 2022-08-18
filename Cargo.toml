@@ -14,7 +14,7 @@ readme = "README.md"
 rustdoc-args = [ "--html-in-header", "katex-header.html" ]
 
 [dependencies]
-blst = { git = "https://github.com/lurk-lang/blst", branch = "sb/wasm", default-features = true }
+blst = { version = "0.3.10", default-features = true }
 rand_core = "0.6"
 ff = "0.12"
 group = { version = "0.12", features = ["tests"] }
@@ -24,6 +24,9 @@ subtle = "2.2.1"
 serde = { version = "1.0", features = ["derive"], optional = true }
 ec-gpu = { version = "0.2.0", optional = true }
 byte-slice-cast = "1.0.0"
+
+[patch.crates-io]
+blst = { git = "https://github.com/lurk-lang/blst", branch = "sb/wasm" }
 
 [dev-dependencies]
 rand_xorshift = "0.3.0"
