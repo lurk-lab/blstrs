@@ -1,3 +1,6 @@
+> [!WARNING]
+> Technical fork, no longer actively maintained
+
 # `blstrs`
 
 > Implementation of BLS12-381 pairing-friendly elliptic curve construction, using the [blst](https://github.com/supranational/blst) library as backend.
